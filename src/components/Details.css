@@ -1,0 +1,17 @@
+.details {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 120px;
+    row-gap: 16px;
+}
+
+.button_details {
+    width: 100px;
+    height: 28px;
+    border-radius: 4px;
+    border: red 2px solid;
+    background: white;
+    margin-top: 20px;
+}

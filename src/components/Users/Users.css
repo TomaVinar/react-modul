@@ -1,0 +1,12 @@
+/*#root {*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    padding-left: 16px;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+.user_container {
+    width: 300px;
+    flex-direction: column;
+}

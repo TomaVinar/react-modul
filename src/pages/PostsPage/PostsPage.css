@@ -1,0 +1,21 @@
+.content {
+    display: flex;
+    width: 300%;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+.all_posts {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+
+.outlet {
+    width: auto;
+    padding-top: 100px;
+}
+

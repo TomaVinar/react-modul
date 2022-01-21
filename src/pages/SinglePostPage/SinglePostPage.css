@@ -1,0 +1,25 @@
+.post_wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.post_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 8px;
+}
+
+.post_item h5 {
+    margin: 0;
+}
+
+.comments_btn {
+    width: 120px;
+    height: 24px;
+    border: lightskyblue 2px solid;
+    border-radius: 4px;
+    background: white;
+    margin-top: 20px;
+}

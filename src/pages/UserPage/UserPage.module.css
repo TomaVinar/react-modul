@@ -1,0 +1,22 @@
+.main_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 8px;
+    height: auto;
+    position: relative;
+}
+
+.post_button {
+    background: white;
+    width: 120px;
+    height: 24px;
+    border-radius: 4px;
+    border: lightskyblue 2px solid;
+    margin: 40px 0 40px 0;
+}
+
+.outlet {
+    display: flex;
+    flex-direction: column;
+}

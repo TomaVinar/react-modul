@@ -1,0 +1,20 @@
+.wrap {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.post_button{
+    width: 100px;
+    height: 28px;
+    border: none;
+    background: lightslategray;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.post_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}

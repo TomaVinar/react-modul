@@ -1,0 +1,14 @@
+.posts_btn {
+    width: 120px;
+    height: 28px;
+    background: white;
+    border: lightslategray 2px solid;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.outlet {
+    width: 60%;
+    margin-top: 80px;
+    margin-left: 20px;
+}

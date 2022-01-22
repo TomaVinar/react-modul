@@ -1,0 +1,15 @@
+.wrap_post {
+    display: flex;
+    flex-direction: column;
+}
+.comment_btn {
+    width: 120px;
+    height: 28px;
+    background: white;
+    border: lightslategray 2px solid;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+

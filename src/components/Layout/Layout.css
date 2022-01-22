@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background: dimgray;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.header a {
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+}
+
+.header a[class='active'] {
+    color: lightpink;
+}

@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+
+}
+
+.posts_container {
+    width: 50%;
+}
+
+.outlet {
+    margin-right: 20px;
+}
+

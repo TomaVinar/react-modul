@@ -1,0 +1,16 @@
+.wrap_user {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_button {
+    width: 100px;
+    height: 28px;
+    border: none;
+    background: lightslategray;
+    border-radius: 4px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: white;
+}

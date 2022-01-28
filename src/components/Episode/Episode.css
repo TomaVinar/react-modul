@@ -1,0 +1,6 @@
+.episode_block {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}

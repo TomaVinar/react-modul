@@ -25,7 +25,6 @@ const CharactersPage = () => {
             </div>
         )
     }
-
     return (
         <div>
             <div className={css.wrap}>

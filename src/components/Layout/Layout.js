@@ -12,8 +12,8 @@ const Layout = () => {
                 <h1>The Rick and Morty API</h1>
                 <div className={'menu'}>
                     <Link to={'character?page=1'}><button>Characters</button></Link>
-                    <Link to={'location'}><button>Locations</button></Link>
-                    <Link to={'episode'}><button>Episodes</button></Link>
+                    <Link to={'location?page=1'}><button>Locations</button></Link>
+                    <Link to={'episode?page=1'}><button>Episodes</button></Link>
                 </div>
 
             </div>

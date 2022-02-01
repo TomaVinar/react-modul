@@ -1,13 +1,13 @@
 import React from "react";
 
-const Cat = ({cat:{id, name}}) => {
+const Dog = ({dog: {id, name}}) => {
 
     return (
         <div>
             {name}
-            <button>Delete cat</button>
+            <button>Delete dog</button>
         </div>
     );
 };
 
-export {Cat};
+export {Dog};

@@ -1,0 +1,12 @@
+.car_buttons {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 12px;
+}
+
+.car_block {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

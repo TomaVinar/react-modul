@@ -1,11 +1,11 @@
 import React from "react";
 
-const Dog = ({dog: {id, name}}) => {
+const Dog = ({dog: {id, name}, dispatch}) => {
 
     return (
         <div>
             {name}
-            <button>Delete dog</button>
+            <button onClick={()=>dispatch({type: 'Delete_dog', payload: {id}})}>Delete dog</button>
         </div>
     );
 };

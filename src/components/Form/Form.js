@@ -7,9 +7,16 @@ const Form = ({dispatch}) => {
     const catField = useRef();
     const dogField = useRef();
 
-    const {register, handleSubmit} = useForm();
+    const {register, handleSubmit, reset, setState, formState:{isValid}} = useForm({
+        mode: "onChange",
+        defaultValues: {
+            cat: '',
+            dog: ''
+        }
+    });
 
     const onSubmit = (e) => {
+        reset()
     }
 
     const saveCat = () => {
@@ -30,12 +37,12 @@ const Form = ({dispatch}) => {
         <div className={css.container}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
-                    <label> Add cat: <input type="text" {...register('cat')} ref={catField}/></label>
-                    <button onClick={saveCat}>Save cat</button>
+                    <label> Add cat: <input type="text" {...register('animals.cat', {minLength: 1, required: true})} ref={catField}/></label>
+                    <button onClick={()=>saveCat} disabled={!isValid}>Save cat</button>
                 </div>
                 <div>
                     <label> Add dog: <input type="text" {...register('dog')} ref={dogField}/> </label>
-                    <button onClick={saveDog}>Save dog</button>
+                    <button onClick={saveDog} >Save dog</button>
                 </div>
             </form>
         </div>

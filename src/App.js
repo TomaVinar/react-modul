@@ -2,8 +2,6 @@ import {useReducer} from "react";
 
 import "../src/index"
 import {Cats, Dogs, Form} from "./components";
-// import css from "./App.module.css"
-
 
 function App() {
 
@@ -14,9 +12,9 @@ function App() {
             case 'Add_dog':
                 return {...state, dogs: [...state.dogs, {id: new Date().getTime(), name: action.payload.dog}]}
             case 'Delete_cat':
-                return {...state.cats.filter(cat => cat.id !== action.payload.id)}
+                return {...state, cats:[...state.cats.filter(cat => cat.id !== action.payload.id)]}
             case 'Delete_dog':
-                return {...state.dogs.filter(dog => dog.id !== action.payload.id)}
+                return {...state, dogs: [...state.dogs.filter(dog => dog.id !== action.payload.id)]}
             default:
                 return {state}
         }
@@ -28,8 +26,8 @@ function App() {
         <div>
             <Form dispatch={dispatch}/>
             <div>
-                <Cats cats={cats}/>
-                <Dogs dogs={dogs}/>
+                <Cats cats={cats} dispatch={dispatch}/>
+                <Dogs dogs={dogs} dispatch={dispatch}/>
             </div>
         </div>
     );

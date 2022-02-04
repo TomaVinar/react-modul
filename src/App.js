@@ -1,21 +1,22 @@
-import Users from "./components/Users/Users";
-import Posts from "./components/posts/Posts";
-import Comments from "./components/comments/Comments";
-import "./App.css";
+import {Form} from "./components";
+import {Route, Routes} from "react-router-dom";
 
-function App () {
+import {Layout} from "./components";
+import {CommentsPage, PostsPage, UsersPage} from "./pages";
 
-    return (
-        <div>
-            <div className = {'content'}>
-                <Users/>
-                <Posts/>
-            </div>
-            <div>
-                <Comments/>
-            </div>
-        </div>
-    )
+function App() {
+  return (
+    <div>
+      <Routes>
+        <Route path={'/'} element={<Layout/>}>
+            <Route path={'form'} element={<Form/>}/>
+            <Route path={'users'} element={<UsersPage/>}/>
+            <Route path={'posts'} element={<PostsPage/>}/>
+            <Route path={'comments'} element={<CommentsPage/>}/>
+        </Route>
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

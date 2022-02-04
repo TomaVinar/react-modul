@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background: mediumorchid;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    column-gap: 60px;
+    font-size: 20px;
+}
+
+.menu a {
+    color: khaki;
+    text-decoration: none;
+}
+
+.menu a[class='active'] {
+    color: white;
+    text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+.titles {
+    font-weight: bold;
+}
+
+.post {
+    padding: 10px;
+    background: #fffbf2;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}

@@ -1,37 +1,26 @@
-import {useEffect, useState} from "react";
-import "./Users.css";
-import User_component from "./User_component";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+
+import {getAllUsers} from "../../store/users.slice"
+import {User} from "../User/User";
+import css from "./Users.module.css"
 
 const Users = () => {
-    const [usersList, setUsersList] = useState([]);
+    const {users} = useSelector(state => state['usersReducer'])
+    const dispatch = useDispatch();
+
 
     useEffect(() => {
-            fetch('https://jsonplaceholder.typicode.com/users')
-                .then(response => response.json())
-                .then(users =>
-                    setUsersList(users));
-        },
-        []);
+        dispatch(getAllUsers())
+    }, [dispatch])
+
     return (
-        <div>
-            {usersList.map(value => <User_component
-                key={value.id}
-                id = {value.id}
-                name = {value.name}
-                username = {value.username}
-                phone = {value.phone}
-                city = {value.address.city}
-                street = {value.address.street}
-                suite = {value.address.suite}
-                zipcode = {value.address.zipcode}
-                lat = {value.address.geo.lat}
-                lng = {value.address.geo.lng}
-                website = {value.website}
-                companyName = {value.company.name}
-                catchPhrase = {value.company.catchPhrase}
-                bs = {value.company.bs}/>)};
+        <div className={css.users_block}>
+            {users.map(user => <User key={user.id}
+                                     user={user}/>)}
         </div>
     )
 }
 
-export default Users
+
+export {Users}

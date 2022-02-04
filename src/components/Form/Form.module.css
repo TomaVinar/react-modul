@@ -1,0 +1,21 @@
+.form_container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+input {
+    margin-right: 40px;
+}
+
+.button_form {
+    width: 100px;
+    height: 26px;
+    background: khaki;
+    border: none;
+    border-radius: 4px;
+}
+
+.form_cars {
+    padding: 40px;
+}

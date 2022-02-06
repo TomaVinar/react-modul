@@ -1,19 +1,11 @@
-import Users from "./components/Users/Users";
-import Posts from "./components/posts/Posts";
-import Comments from "./components/comments/Comments";
-import "./App.css";
+import {Form, Tasks} from './components';
 
 function App () {
 
     return (
         <div>
-            <div className = {'content'}>
-                <Users/>
-                <Posts/>
-            </div>
-            <div>
-                <Comments/>
-            </div>
+            <Form/>
+            <Tasks/>
         </div>
     )
 }
